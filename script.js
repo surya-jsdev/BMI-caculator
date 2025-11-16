@@ -9,6 +9,7 @@ function bmi() {
         result.style.color = "red";
         return;
     }
+
     const height = heightInput / 100;
     let bmi = weightInput / (height * height);
     let category = "";
@@ -28,7 +29,7 @@ function bmi() {
         color = "red";
     }
 
-    result.textContent = `${yourname.toUpperCase()}, Your BMI is ${bmi.toFixed(2)} (${category})`;
+    result.textContent = `${yourname.toUpperCase()}, Your Body Mass Index is ${bmi.toFixed(2)} (${category})`;
     result.style.color = color;
 
     document.querySelector("form").reset();
